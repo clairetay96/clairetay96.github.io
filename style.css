@@ -16,6 +16,7 @@ a {
 	color: #FF2EE1;
 }
 
+
 .nav-bar {
 	width: 100%;
 	background-color: #211B48;
@@ -30,8 +31,15 @@ a {
 	z-index: 100;
 }
 
+
+
 .nav-bar-social-icons > * {
 	margin: 5px;
+}
+
+.nav-bar-social-icons > *:hover {
+	color: #FF2EE1;
+	transition: 0.2s;
 }
 
 
@@ -39,6 +47,14 @@ a {
 	color: white;
 	text-decoration: none;
 	margin: 5px;
+}
+
+.nav-bar a.current-section {
+	color: #FF2EE1;
+}
+
+.nav-bar button {
+	cursor: pointer;
 }
 
 .header-text {
@@ -49,7 +65,7 @@ a {
 .header-text2 {
 	font-size: 40px;
 	font-weight: bold;
-	color: #5EF0F0;
+	color: #00BFEF;
 }
 
 
@@ -62,8 +78,9 @@ a {
 }
 
 #about {
-	width: 100%;
-	margin: 90px 0 30px;
+	width: 90%;
+	padding-top: 90px;
+	margin: 10px auto 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -90,7 +107,7 @@ a {
 	padding-top: 30%;
 	background-size: cover;
 	margin: 0 5%;
-	background-image: linear-gradient(to bottom, #5EF0F040, #5EF0F080), url("profile.JPG");
+	background-image: url("profile.JPG");
 	filter: drop-shadow(10px 10px 4px #00000040);
 }
 
@@ -104,7 +121,19 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding-top: 40px;
 
+}
+
+.skill-lists {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.skill-lists > div{
+	width: 20%;
+	min-width: 200px;
+	margin: 0 20px 10px 0;
 }
 
 #portfolio {
@@ -112,20 +141,20 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding-top: 40px;
 
 }
 
 .portfolio-cards {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 10px;
 }
 
 .portfolio-indiv {
-	margin: 20px 5px;
+	margin: 20px 5px 0 0;
 	width: 30%;
 	min-width: 250px;
-	padding: 5px 10px;
+	padding: 5px 10px 5px 0;
 }
 
 .portfolio-indiv a {
@@ -135,7 +164,6 @@ a {
 
 .portfolio-indiv-text {
 	width: 87%;
-	margin: 0 auto;
 }
 
 .portfolio-card-header {
@@ -153,7 +181,22 @@ a {
 	width: 90%;
 	padding-top: 90%;
 	background-color: #FF2EE1;
-	margin: 0 auto;
+	background-size: cover;
+	filter: drop-shadow(10px 10px 4px #00000040);
+	opacity: 0.8;
+}
+
+
+.delego {
+	background-image: url('delego-ss.png');
+}
+
+.bakerInn {
+	background-image: url('bakerinn-ss.png');
+}
+
+.hayaku {
+	background-image: url('hayaku-ss.png');
 }
 
 #contact {
@@ -161,6 +204,8 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 100px;
+	padding-top: 40px;
 
 }
 
